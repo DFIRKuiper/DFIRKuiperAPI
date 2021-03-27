@@ -33,13 +33,13 @@ required arguments:
 
 **QUERY**: it is elasticsearch query string, for ease of use, you can copy the same raw query from Kuiper interface and place it here 
 
-![search_query_string](/home/s/Desktop/kuiper/KuiperAPI/search_query_string.png)
+![search_query_string](https://github.com/DFIRKuiper/DFIRKuiperAPI/blob/main/search_query_string.png?raw=true)
 
 FIELDS: the exteracted fields, to get the current path, open Kuiper interface, then select record, and click on artifact details icon, and copy the wanted field
 
-![select_fields_1](/home/s/Desktop/kuiper/KuiperAPI/select_fields_1.png)
+![select_fields_1](https://github.com/DFIRKuiper/DFIRKuiperAPI/blob/main/select_fields_1.png?raw=true)
 
-![select_fields_2](/home/s/Desktop/kuiper/KuiperAPI/select_fields_2.png)
+![select_fields_2](https://github.com/DFIRKuiper/DFIRKuiperAPI/blob/main/select_fields_2.png?raw=true)
 
 #### Example
 
