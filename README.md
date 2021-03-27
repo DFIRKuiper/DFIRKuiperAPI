@@ -1,6 +1,8 @@
 # DFIR-Kuiper-API
 
-This script to communicate with [DFIRKuiper](https://github.com/DFIRKuiper/Kuiper) API, currently this script only retrives parsed data from Kuiper.
+This script to communicate with [DFIRKuiper](https://github.com/DFIRKuiper/Kuiper) API, currently this script only retrives parsed data from Kuiper. 
+
+NOTE: the API feature added to Kuiper from version 2.0.10
 
 ### Use Cases
 
