@@ -35,7 +35,7 @@ required arguments:
 
 ![search_query_string](https://github.com/DFIRKuiper/DFIRKuiperAPI/blob/main/search_query_string.png?raw=true)
 
-FIELDS: the exteracted fields, to get the current path, open Kuiper interface, then select record, and click on artifact details icon, and copy the wanted field
+**FIELDS**: the exteracted fields, to get the current path, open Kuiper interface, then select record, and click on artifact details icon, and copy the wanted field
 
 ![select_fields_1](https://github.com/DFIRKuiper/DFIRKuiperAPI/blob/main/select_fields_1.png?raw=true)
 
