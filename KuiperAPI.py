@@ -5,6 +5,11 @@ import requests
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+
+from requests_toolbelt import MultipartEncoder
+import base64
+
+
 class Kuiper_API:
 
 	def __init__(self, Kuiper_URL, api_token):
@@ -52,6 +57,25 @@ class Kuiper_API:
 				yield response_json
 
 
+
+	# ================== upload machine
+	# this function upload specific machine to Kuiper server for specific case
+	# case:			case id from Kuiper
+	# machine_name: machine name to be created in the case
+	# file_path:	path of the zip file
+	def upload_machine(self, case , machine_name , file_path):
+		m_name_base64 = base64.urlsafe_b64encode(machine_name.encode("utf-8"))
+		m = MultipartEncoder(
+			fields={
+					'api_token'	 : self.api_token , 
+					'base64_name': m_name_base64,
+					'files'		 : (m_name_base64 , open(file_path , "rb") , "application/zip") 
+				}
+			)
+
+
+		r = requests.post(self.Kuiper_URL + "upload_machine/"+case , data=m, headers={'Content-Type': m.content_type}, verify=False)
+		return json.loads(r.content)
 
 
 
