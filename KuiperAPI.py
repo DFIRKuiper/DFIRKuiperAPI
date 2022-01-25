@@ -43,6 +43,7 @@ class Kuiper_API:
 			json_request['seq_num'] = seq_number
 			json_string = json.dumps({'data': json_request})
 			response = requests.post(self.Kuiper_URL + "get_artifacts", data=json_string , verify=False)
+			#print(response.content)
 			response_json 	 = json.loads(response.content)
 			if response_json['success']:
 				retrieved_records += len(response_json['data']['hits']['hits'])
